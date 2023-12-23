@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@layer components {
+  .form-container {
+    @apply flex flex-col justify-center items-start gap-4 bg-gray-100 p-10 rounded-lg;
+  }
+
+  .input-container {
+    @apply flex flex-col items-start justify-between gap-1 w-full;
+  }
+
+  .input-box {
+    @apply w-full px-2 py-1 border-[1px] focus:outline-1 focus-visible:outline-1 focus:outline-dashed focus-visible:outline-dashed;
+  }
+}
