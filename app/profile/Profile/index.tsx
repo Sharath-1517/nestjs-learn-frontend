@@ -1,13 +1,11 @@
 "use client";
 
 import axios from "axios";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
 const Profile = () => {
-  const [fetchedData, setFetchedData] = useState();
-
-  const memoizedData = useMemo(() => {
-    useEffect(() => {}, []);
+  const memoizedData = useMemo(async () => {
+    // const response = await axios.post()
   }, []);
 
   return <div>Profile</div>;
